@@ -16,6 +16,8 @@ public class UserRegistrationService {
     final List<User> registeredUsers;
     final HttpClient httpClient = HttpClient.newHttpClient();
 
+    // TODO Uppgift 1: Använd Records för User och Result istället för klasser!
+
     public UserRegistrationService() {
         registeredUsers = fetchRegisteredUsers();
     }
@@ -65,6 +67,7 @@ public class UserRegistrationService {
         registeredUsers.add(new User(2, 27, "Marge", true));
         registeredUsers.add(new User(3, 5, "Peter", true));
         registeredUsers.add(new User(4, 91, "Bart", true));
+        // TODO: Avkommentera nedan för att få ett annat utfall
         // registeredUsers.add(new User(1, 1, "delectus aut autem", false));
 
         return registeredUsers;

@@ -8,3 +8,6 @@
 3. Installera Maven i terminalen, tips på sätt att göra detta på:
     * https://maven.apache.org/install.html
     * https://www.baeldung.com/install-maven-on-windows-linux-mac
+   
+
+För att köra labben själv: Följ TODO:sen!
