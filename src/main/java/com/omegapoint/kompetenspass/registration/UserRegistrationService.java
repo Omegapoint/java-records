@@ -65,7 +65,6 @@ public class UserRegistrationService {
         registeredUsers.add(new User(2, 27, "Marge", true));
         registeredUsers.add(new User(3, 5, "Peter", true));
         registeredUsers.add(new User(4, 91, "Bart", true));
-        // TODO: Uncomment below to yield a false Result
         // registeredUsers.add(new User(1, 1, "delectus aut autem", false));
 
         return registeredUsers;
