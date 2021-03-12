@@ -17,9 +17,10 @@ public class User {
                 final boolean completed) {
         Validate.notNaN(userId);
         Validate.notNaN(id);
+        Validate.notBlank(title);
         this.userId = userId;
         this.id = id;
-        this.title = notBlank(title);
+        this.title = title;
         this.completed = completed;
     }
 
