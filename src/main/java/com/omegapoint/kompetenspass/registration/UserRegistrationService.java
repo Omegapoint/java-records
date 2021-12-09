@@ -43,8 +43,8 @@ public class UserRegistrationService {
         final JSONObject jsonObject = new JSONObject(response.body());
 
         return new User(
-                jsonObject.getDouble("userId"),
-                jsonObject.getDouble("id"),
+                jsonObject.getInt("userId"),
+                jsonObject.getInt("id"),
                 jsonObject.getString("title"),
                 jsonObject.getBoolean("completed")
         );

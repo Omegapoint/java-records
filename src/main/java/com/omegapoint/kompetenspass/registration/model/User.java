@@ -6,18 +6,15 @@ import org.apache.commons.lang3.Validate;
 import static org.apache.commons.lang3.Validate.notBlank;
 
 public class User {
-    private final double userId;
-    private final double id;
+    private final int userId;
+    private final int id;
     private final String title;
     private final boolean completed;
 
-    public User(final double userId,
-                final double id,
+    public User(final int userId,
+                final int id,
                 final String title,
                 final boolean completed) {
-        Validate.notNaN(userId);
-        Validate.notNaN(id);
-        Validate.notBlank(title);
         this.userId = userId;
         this.id = id;
         this.title = title;
@@ -45,7 +42,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final User user = (User) o;
-        return Double.compare(user.userId, userId) == 0 && Double.compare(user.id, id) == 0 && completed == user.completed && Objects.equals(title, user.title);
+        return userId == user.userId && id == user.id && completed == user.completed && Objects.equals(title, user.title);
     }
 
     @Override
